@@ -94,10 +94,5 @@ public class AccountController {
 		}
 
 	}
-//	Thanh
-	 @PostMapping("/login")
-	    public String login(Account Acc) {
-	        // Xử lý logic đăng nhập ở đây
-	        return "Login successful";
-	    }
+
 }

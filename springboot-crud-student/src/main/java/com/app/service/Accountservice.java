@@ -19,6 +19,7 @@ public class Accountservice  {
 	@Autowired
     public Accountservice(AccountRepository accountRepository) {
         this.accountRepository = accountRepository;
+        
     }
 	
 	 @Transactional
@@ -43,6 +44,11 @@ public class Accountservice  {
 	    }
 	  public Optional<Account> getAccById(Long accountId) {
 	        return accountRepository.findById(accountId);
+	    }
+	  public boolean isValidLogin(String username, String password) {
+	        // Thực hiện kiểm tra đăng nhập dựa trên tên người dùng và mật khẩu
+	        Account account = accountRepository.findByUsername(username);
+	        return account != null && account.getPasword().equals(password);
 	    }
 	
 }
