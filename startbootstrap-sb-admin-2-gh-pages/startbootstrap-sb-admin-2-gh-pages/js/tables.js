@@ -161,3 +161,4 @@ function updateProduct() {
         console.error('Error updating product:', error);
     });
 }
+

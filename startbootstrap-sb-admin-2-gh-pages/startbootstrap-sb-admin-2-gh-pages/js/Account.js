@@ -19,7 +19,7 @@ function displayDataOnPage(AccData) {
         <tr>
             <td>${Acc.account_ID}</td>
             <td>${Acc.username}</td>
-            <td>${Acc.pasword}</td>
+            <td >************</td>
             <td>${Acc.privleges}</td>
             <td><button type="button" class="btn btn-primary" onclick="deleteStudent(${Acc.account_ID})">Delete</button>
             <button type="button" class="btn btn-danger" onclick="openUpdateAccountModal(${Acc.account_ID})">Chỉnh sửa</button>

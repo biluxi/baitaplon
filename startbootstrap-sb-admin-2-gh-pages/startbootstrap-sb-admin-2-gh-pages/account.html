@@ -426,7 +426,12 @@
                         </div>
                         <div class="form-group">
                             <label for="role">Quyền:</label>
-                            <input type="email" class="form-control" id="role" required>
+                            <!-- <input type="email" class="form-control" id="role" required> -->
+                            <select id="role" name="fruit" class="form-control">
+                                <!-- Các thẻ option để định nghĩa lựa chọn -->
+                                <option value="Tài khoản  quản trị">Tài khoản  quản trị</option>
+                                <option value="Tài khoản thường">Tài khoản thường </option>
+                            </select>
                         </div>
                         <button type="button" class="btn btn-primary" onclick="addAcc()">Add Acc</button>
                     </form>
@@ -460,8 +465,14 @@
                         </div>
                         <div class="form-group">
                             <label for="updatePrivleges">Nội dung:</label>
-                            <input type="email" class="form-control" id="updatePrivleges" required>
+                            <!-- <input type="email" class="form-control" id="updatePrivleges" required> -->
+                            <select id="updatePrivleges" name="fruit" class="form-control">
+                                <!-- Các thẻ option để định nghĩa lựa chọn -->
+                                <option value="Tài khoản  quản trị">Tài khoản  quản trị</option>
+                                <option value="Tài khoản thường">Tài khoản thường </option>
+                            </select>
                         </div>
+                        
                         <button type="button" class="btn btn-danger" onclick="updatedAccount()">Cập nhật sản
                             phẩm</button>
                     </form>
